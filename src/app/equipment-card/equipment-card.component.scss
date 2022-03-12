@@ -1,17 +1,21 @@
-.card{
+.card-hghlght:hover{
+  transform: scale(1.02);
+}
+.card-hghlght:not(:hover){
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+  .card{
   display: flex;
   flex-direction: column;
   align-items: center;
-
   .tag{
     padding: 0 10px;
     background-color: red;
     border: transparent solid 1px;
     border-radius: 5px;
   }
-
-
-  .divstyle{
+  .card-hghlght{
     margin: 5px;
     background-size: cover;
     background-position: center;
@@ -19,9 +23,12 @@
     height: 240px;
     border: darkgrey solid 2px;
     border-radius: 20px;
-    /* padding-bottom: 260px */
+    box-shadow: 10px 10px 15px -15px rgba(0,0,0,0.62);
+    pointer-events: auto;
+    transform: scale(1);
+    transition: all 0.4s;
   }
   .caption{
     padding-top: 0.5em;
-  }
+}
 }
