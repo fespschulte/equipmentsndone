@@ -3,3 +3,10 @@ body{
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+
+.catalogo:hover .card-hghlght:not(:hover) {
+  opacity: 0.5;
+  transform: scale(0.5);
+} 
+
