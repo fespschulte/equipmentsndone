@@ -6,9 +6,11 @@ import { EquipmentListComponent } from './equipment-list/equipment-list.componen
 import { EquipmentCardComponent } from './equipment-card/equipment-card.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
       EquipmentListComponent,
       EquipmentCardComponent,
@@ -16,7 +18,8 @@ import { FooterComponent } from './footer/footer.component';
       FooterComponent
    ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
