@@ -8,4 +8,18 @@ import { IEquipment } from '../equipment.interface';
 })
 export class EquipmentCardComponent {
   @Input() equipment!: IEquipment;
+
+  getBgColor(tag: string) : string {
+    let color = '';
+    if(tag === 'strength'){
+      color = "red";
+    }else if(tag === 'conditioning'){
+      color = "green";
+    }else{
+      color = 'pink';
+    }
+    return color;
+
+  }
+
 }
